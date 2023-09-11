@@ -5,6 +5,7 @@ import plotly.express as px
 import dash.dependencies as dd
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Load the data
 data_url = "https://raw.githubusercontent.com/Haithem-alosta/Assignment3/main/best-selling%20game%20consoles.csv"
