@@ -13,7 +13,7 @@ data = pd.read_csv(data_url)
 data3 = data[['Console Name', 'Units sold (million)', 'Released Year']]
 data3 = data3.sort_values('Released Year', ascending=False)
 
-# Define your chart creation functions
+# Define my chart creation functions
 def create_bar_chart():
     fig_bar = px.bar(data3, x='Console Name', y='Units sold (million)', title='Units Sold for Different Consoles')
     return fig_bar
